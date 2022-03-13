@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Solve The Sum</title>
+
+	<script src="2nd.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="load()">
+	<span class="players btn-info"><span id="player1N" ></span><span id="player1S"></span></span>
+	<br>
+	<span class="players btn-warning"><span id="player2N"></span><span id="player2S"></span></span>
+
+	<div class="container">
+		<center>
+			<h2 style="color: white;">Guess The Word!</h2>
+
+			<h3 id="playerQ"></h3>
+			<h3 id="playerA"></h3>
+			<div id="output" class="col-empty-6"></div>
+
+			<br>
+			<br>
+
+			<label>NUMBER 1</label>
+
+			<br>
+			<input type="number" id="number1" class="form-control">
+			<br>
+			<label>NUMBER 2</label>
+			<br>
+			<input type="number" id="number2" class="form-control">
+			<br> 	
+			<button onclick="send()" class="btn-primary" style="color: rgb(255, 174, 0);">Send</button>
+		</center>
+	</div>
+
+	<script src="game_login.js"></script>
+</body>
+
+</html>
